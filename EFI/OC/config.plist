@@ -554,8 +554,7 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array>
-		</array>
+		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleAttributes</key>
@@ -788,7 +787,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02R9UYISKAK</string>
+			<string></string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -814,7 +813,7 @@
 			<key>SystemSKUNumber</key>
 			<string>Mac-B809C3757DA9BB8D</string>
 			<key>SystemSerialNumber</key>
-			<string>C02R9UYISKAK</string>
+			<string></string>
 			<key>SystemUUID</key>
 			<string>4AAE8375-0353-444E-A69D-20406ECB7F72</string>
 			<key>SystemVersion</key>
