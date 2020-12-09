@@ -393,7 +393,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooTSCSync</string>
 				<key>MaxKernel</key>
@@ -414,6 +414,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/USBInjectAll</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>CpuTscSync.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CpuTscSync</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -445,6 +463,12 @@
 			<data></data>
 			<key>Cpuid1Mask</key>
 			<data></data>
+			<key>DummyPowerManagement</key>
+			<false/>
+			<key>MaxKernel</key>
+			<string></string>
+			<key>MinKernel</key>
+			<string></string>
 		</dict>
 		<key>Force</key>
 		<array/>
@@ -619,11 +643,17 @@
 			<false/>
 			<key>DisableRtcChecksum</key>
 			<false/>
+			<key>ExtendBTFeatureFlags</key>
+			<false/>
 			<key>ExternalDiskIcons</key>
+			<false/>
+			<key>ForceSecureBootScheme</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
+			<false/>
+			<key>LegacyCommpage</key>
 			<false/>
 			<key>PanicNoKextDump</key>
 			<true/>
@@ -894,62 +924,127 @@
 	<dict>
 		<key>Automatic</key>
 		<false/>
+		<key>CustomMemory</key>
+		<false/>
+		<key>DataHub</key>
+		<dict>
+			<key>ARTFrequency</key>
+			<integer>0</integer>
+			<key>BoardProduct</key>
+			<string>Mac-63001698E7A34814</string>
+			<key>BoardRevision</key>
+			<data>Bw==</data>
+			<key>DevicePathsSupported</key>
+			<integer>0</integer>
+			<key>FSBFrequency</key>
+			<integer>0</integer>
+			<key>InitialTSC</key>
+			<integer>0</integer>
+			<key>PlatformName</key>
+			<string></string>
+			<key>SmcBranch</key>
+			<data>ajEzOF85AAA=</data>
+			<key>SmcPlatform</key>
+			<data>ajEzOQAAAAA=</data>
+			<key>SmcRevision</key>
+			<data>AkcPAAAD</data>
+			<key>StartupPowerEvents</key>
+			<integer>0</integer>
+			<key>SystemProductName</key>
+			<string>iMac19,2</string>
+			<key>SystemSerialNumber</key>
+			<string>C02ZVTZ8JWDW</string>
+			<key>SystemUUID</key>
+			<string>D0A38D26-2918-47C0-813C-6D0C7BB31B13</string>
+		</dict>
+		<key>Generic</key>
+		<dict>
+			<key>AdviseWindows</key>
+			<false/>
+			<key>MLB</key>
+			<string>C029514044NKGQG1H</string>
+			<key>ProcessorType</key>
+			<integer>1541</integer>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
+			<key>ROM</key>
+			<data></data>
+			<key>SpoofVendor</key>
+			<false/>
+			<key>SystemProductName</key>
+			<string>iMac19,2</string>
+			<key>SystemSerialNumber</key>
+			<string>C02ZVTZ8JWDW</string>
+			<key>SystemUUID</key>
+			<string>D0A38D26-2918-47C0-813C-6D0C7BB31B13</string>
+		</dict>
+		<key>PlatformNVRAM</key>
+		<dict>
+			<key>BID</key>
+			<string></string>
+			<key>FirmwareFeatures</key>
+			<data>dvWP/QAAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>f//f/wAAAAA=</data>
+			<key>MLB</key>
+			<string>C029514044NKGQG1H</string>
+			<key>ROM</key>
+			<data></data>
+		</dict>
 		<key>SMBIOS</key>
 		<dict>
 			<key>BIOSReleaseDate</key>
-			<string>06/16/2020</string>
+			<string>06/15/2020</string>
 			<key>BIOSVendor</key>
 			<string></string>
 			<key>BIOSVersion</key>
-			<string>428.0.0.0.0</string>
+			<string>1037.140.50.0.0</string>
 			<key>BoardAssetTag</key>
-			<string></string>
+			<string>Base Board Asset Tag</string>
 			<key>BoardLocationInChassis</key>
 			<string>Part Component</string>
 			<key>BoardManufacturer</key>
 			<string></string>
 			<key>BoardProduct</key>
-			<string>Mac-B809C3757DA9BB8D</string>
+			<string>Mac-63001698E7A34814</string>
 			<key>BoardSerialNumber</key>
-			<string>C02608130J9GPF71H</string>
+			<string>C029514044NKGQG1H</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
-			<string>1.0</string>
+			<string>iMac19,2</string>
 			<key>ChassisAssetTag</key>
-			<string>iMac-Aluminum</string>
+			<string>Asset Tag#</string>
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02R9UYLGG7L</string>
+			<string>C02ZVTZ8JWDW</string>
 			<key>ChassisType</key>
-			<integer>9</integer>
+			<integer>13</integer>
 			<key>ChassisVersion</key>
-			<string>Mac-B809C3757DA9BB8D</string>
+			<string>Mac-63001698E7A34814</string>
 			<key>FirmwareFeatures</key>
-			<data>duEP/AAAAAA=</data>
+			<data>dvWP/QAAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
-			<data>f/8f/wAAAAA=</data>
-			<key>MemoryFormFactor</key>
-			<integer>0</integer>
+			<data>f//f/wAAAAA=</data>
 			<key>PlatformFeature</key>
-			<integer>0</integer>
+			<integer>32</integer>
 			<key>ProcessorType</key>
-			<integer>0</integer>
+			<integer>1541</integer>
 			<key>SmcVersion</key>
 			<data></data>
 			<key>SystemFamily</key>
-			<string>iMac17,1</string>
+			<string>iMac</string>
 			<key>SystemManufacturer</key>
 			<string></string>
 			<key>SystemProductName</key>
-			<string>iMac17,1</string>
+			<string>iMac19,2</string>
 			<key>SystemSKUNumber</key>
-			<string>Mac-B809C3757DA9BB8D</string>
+			<string>System SKU#</string>
 			<key>SystemSerialNumber</key>
-			<string>C02R9UYLGG7L</string>
+			<string>C02ZVTZ8JWDW</string>
 			<key>SystemUUID</key>
-			<string>4AAE8375-0353-444E-A69D-20406ECB7F72</string>
+			<string>D0A38D26-2918-47C0-813C-6D0C7BB31B13</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -992,7 +1087,7 @@
 			<key>MinimumVolume</key>
 			<integer>20</integer>
 			<key>PlayChime</key>
-			<true/>
+			<string>Auto</string>
 			<key>VolumeAmplifier</key>
 			<integer>0</integer>
 		</dict>
@@ -1044,6 +1139,8 @@
 			<string></string>
 			<key>DirectGopRendering</key>
 			<true/>
+			<key>ForceResolution</key>
+			<false/>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
@@ -1128,6 +1225,8 @@
 				<false/>
 				<key>Size</key>
 				<integer>268435456</integer>
+				<key>Type</key>
+				<string>Reserved</string>
 			</dict>
 		</array>
 	</dict>
